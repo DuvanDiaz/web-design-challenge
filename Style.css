@@ -1,0 +1,219 @@
+html{
+    position: realtive;
+    min-height: 100%;
+  } 
+  
+  body{
+    margin-bottom: 100px;
+    font-family: Arial, Helvetica, sans-serif;
+    background: #f1f1f142; 
+  }
+  /* Media query for body */
+  @media only screen and (max-width: 767px) {
+    body {
+      background-color: rgba(255, 255, 255, 0.438);
+    }
+  } 
+  h2 {
+    font-size: 40px;
+    color: #4c32e0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: bold;
+    margin-left: 77px; 
+  }
+  
+  h3 {
+    font-size: 16px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin-left: 50px;
+  
+  }
+  
+  h4 {
+    font-size: 16px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin-left: 77px;
+  
+  }
+  
+  .thubnail {
+      /* box model */
+      padding-top: 15px;
+      padding-bottom: 10px;
+  }
+  
+  /* Media query for navigation */
+  @media only screen and (max-width: 767px) {
+    .navbar-header {
+      background-color: rgba(255, 255, 255, 00.438);
+    }
+  } 
+  
+    /* Navigation styles */ 
+  
+    .navbar-custom {
+      background-color: #fff;
+    }
+  
+    #landing-btn {
+      /* box model */
+      height: 50px;
+      padding-top: 15px;
+      padding-bottom: 10px;
+  
+      /* Positioning */
+      margin-left: 90px;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  
+      /* Typography */
+      font-size: 24px;
+      font-weight: bold;
+      color: rgba(255, 255, 255, 0.438); 
+      background: #200a6e;
+    }
+  
+  /* Logo hover state */
+  #landing-btn:hover {
+      /* Visual */
+      opacity: 0.7;
+  }
+  
+  .navbar-right-custom {
+    /* box-model */
+    padding-top: 6px;
+    padding-right: 20px;
+    font-size: 10px;
+    font-weight: bold;
+    opacity:0.8;
+  }
+  
+
+  /* Add a gray color to all navbar links */
+  .navbar li a, .navbar .navbar-brand { 
+    color: slategray;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+  
+  .navbar-nav ul li a:hover {
+    color: #76257ea8 !important; 
+    display: block;
+  }
+  
+  /* Dropdown */
+  .open .dropdown-toggle {
+    color: #2e2e77 !important; 
+    opacity: 0.7 ;
+    filter:alpha(opacity=70);
+  }
+  
+  /* Visualization pages*/
+  
+  .description-header {
+    margin-bottom: 30px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 40px;
+    font-weight: bold;
+    color: #131591ce;
+  }
+  
+  .description-hr {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 16px;
+  }
+  
+  /* Media query for description content */
+  @media only screen and (max-width: 767px) {
+    .description-content{
+      padding: 0;
+      margin-top: 0;
+    }
+  } 
+  
+  .description-content {
+    padding: 10px; 
+    margin-top: 26px;
+    background-color: rgba(255, 255, 255, 0.438);
+  }
+  
+  .description-text {
+    padding-bottom: 20px
+  }
+  
+  #description-image {
+    float: left;
+    width: 200px;
+    height: 200px;
+    margin-top: 20px;
+    margin-right: 20px;
+  }
+  
+  /* for paragraph text */
+  .description-content > p {
+    /* box model */
+    padding-top: 17px;
+    font-size: 17px;
+    color: slategray;
+    margin-top: 5px;
+    margin-right: 20px
+   }
+  
+  /* For comparison page - main frame style */
+  
+  .description2-header {
+    margin-bottom: 30px;
+    font-family: Georgia, Times, "Times New Roman", serif;
+    font-size: 40px;
+    font-weight: bold;
+    color: #0b2670;
+  }
+  
+  .description2-content {
+    padding: 10px; 
+    margin-top: 26px;
+    background-color: rgba(255, 255, 255, 0.438);
+  }
+  
+  .comparison-header {
+    margin-bottom: 15px;
+    font-family: Georgia, Times, "Times New Roman", serif;
+    font-size: 24px;
+    font-weight: bold;
+    margin-left: 177px;
+    color: #063a3e;
+  } */
+  
+  /* imageNav styles */
+  
+  #imageNav-area {
+    width: 100%;
+    padding: 30px 30px 30px;
+    margin-top: 32px;
+    background-color: rgba(255, 255, 255, 0.438);
+  }
+  
+  .imageNav-header {
+    margin-bottom: 15px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 24px;
+    font-weight: bold;
+    color: #6870b8dc;
+  }
+  
+  .imageNav-content {
+    padding: 10px; 
+    margin-top: 26px;
+    background-color: rgba(255, 255, 255, 0.438);
+  }
+  
+  .imageNav-photo {
+    width: 140px;
+    height: 140px;
+  }
+  
+  .imageNav-photo:hover {
+    opacity: 0.7;
+  }
+  
+  .imageNav-photo.active {
+    border: 2px solid #4a65ad;
+  }
