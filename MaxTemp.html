@@ -1,146 +1,91 @@
-
 <!DOCTYPE html>
 <html lang="en-us">
 
 <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA_Compatible" content="ie=edge">
+  <title>Maximum Temperature</title>
 
-    <style>
-        img{ width: auto;
-            height: auto;
-            max-width: 100%;
-            max-height: 100%;}
-    </style>
+   <!-- Bring in our bootstrap stylesheet -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" media="screen">
+  <link rel="stylesheet" href="Style.css" media="screen">
 
-    <meta charset="UTF-8">
-    <title>temperature</title>
-
-
-     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
-
-     <link rel="stylesheet" type="text/css" href="Style.css">
 </head>
 
 <body>
-      <div id="first_line_color">
-        <div class="row">   
-                <div class="col-md-6">    
+  <!-- Navbar -->
+  <nav class="navbar navbar-default">
+    <div class="container-fluid navbar-custom">
 
-                        <div class="first_line" >
-                            <div class="div1"><h1>Latitude</h1> </div>
-                        </div>    
-                </div>  
-                
-               <div class="col-md-2">                        
-                        <div class="dropdown">
-                        <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                            plot
-                        </button>
-                        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                            <a class="dropdown-item" href="MaxTemp.html">MaxTemperature</a>
-                            <a class="dropdown-item" href="Humidity.html">Humidity</a>
-                            <a class="dropdown-item" href="Cloudiness.html">Cloudiness</a>
-                            <a class="dropdown-item" href="WindSpeed.html">Wind-speed</a>
-                        </div>
-                        </div>
-                </div>  
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" aria-expanded="false">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <div class="col-xs-9 phone-nav">
+            <a class="navbar-brand" href="index.html" id="index-btn">Latitude</a>
+          </div>
+        </div>  <!-- navbar-header -->
 
-                <div class="col-md-2">  
-                    <form>
-                       <input class="MyButton1" type="button" value="Comparison" onclick="window.location.href='Comparison.html'" />       
-                    </form>
-                </div> 
+        <div class="collapse navbar-collapse">
+          <ul class="nav navbar-nav navbar-right"navbar-right-custom> 
+            </li> 
+            <li class="dropdown">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Plots <span class="caret"></span></a>
+            <ul class="dropdown-menu">
+              <li><a href="MaxTemp.html">Max Temperature</a></li>
+              <li role="separator" class="divider"></li>
+              <li><a href="Humidity.html">Humidity</a></li>
+              <li role="separator" class="divider"></li>
+              <li><a href="Cloudiness.html">Cloudiness</a></li>
+              <li role="separator" class="divider"></li>
+              <li><a href="WindSpeed.html">Wind Speed</a></li>
+            </ul>
+            <li><a href="Comparison.html">Comparison</a></li>
+            <li><a href="WeatherData.html">Data</a></li>  
+            <li><a href="">    </a></li> 
+          </ul>
+        </div> 
+    </div> 
+  </nav>
 
-                <div class="col-md-2">
-                      <form>
-                            <input class="MyButton2" type="button" value="data" onclick="window.location.href='WeatherData.html'" />       
-                      </form> 
-                </div>
-        </div>
-     </div>
-<br>
-
-<header>
-    <h1>Comparison: Lattitude vs. Temperature</h1>
-</header>
-
-<br>
-<h2 style="position:absolute;left:20%;color:rgb(82, 39, 182)">vs. Max Temperature</h2>
-<br>
-
-<div class="Col_container">
+  <div class="container">
     <div class="row">
-      
-      
-      <div class="col-md-8">
-        
+      <div class="col-sm-8">
+        <article class="description-content">
+          <h1 class="description-header text-center">Max Temperature</h1>
+          <hr class="description-hr"/>
+          <img src="Resources/assets/images/Fig1.png" alt="" class="img-responsive"/>
+          <p>As expected, the weather becomes significantly warmer as one approaches the equator (0 Degree Latitude). More interestingly, however, is the fact that Southern Hemisphere tends to be warmer this time of year than Northern Hemisphere. This may be due to the tilt of the earth at the time of the year that the data was gathered.</p>
+        </article> 
+      </div> 
 
+      <div class="col-sm-4">
+        <!-- Visualizations imageNav area -->
+        <section id="imageNav-area">
+          <div class="imageNav-content">
+            <div class="imageNav-header text-center">WebVisualizations</div>
+            <hr />
+            <div id="images">
+                <a href="MaxTemp.html"><img src="Resources/assets/images/Fig1.png" alt="Latitude vs. Max Temperature" class="imageNav-photo active"></a>
+                <a href="Humidity.html"><img src="Resources/assets/images/Fig2.png" alt="Latitude vs. Humidity" class="imageNav-photo"></a>
+                <a href="Cloudiness.html"><img src="Resources/assets/images/Fig3.png" alt="Latitude vs. Cloudiness" class="imageNav-photo"></a>
+                <a href="WindSpeed.html"><img src="Resources/assets/images/Fig4.png" alt="Latitude vs. Wind Speed" class="imageNav-photo"></a>
+            </div>
+          </div>  
+        </section>  
+      </div> 
 
-        <figure id="main1_figure">
-            
-            <img src="Resources/assets/images/Fig1.png" alt="TempVSLat" style="width:100%;height:100%;align:middle">
-        </figure>
-        <figcaption>Based on the analysis done, the max. temperature recorded was about 80°. Cities that recorded a latitude range of 40° to 80°, seem to affect temprature, bringing it down to 30°.</figcaption>  
-
-
-      </div>
-      
-      
-      <div class="col-md-4">
-          
-            <main class="container2">
-                <header>
-                    <h2>Visualizations</h2>
-                </header>
-            <div class="row">
-              <div class="col-xs-3 col-sm-3 col-md-6">
-                  <figure id="main1_figure">
-                    <a href="MaxTemp.html">
-                      <img src="/Resources/assets/images/Fig1.png" alt="TempVSLat" style="width:150px;height:150px;">
-                    </a>
-                    </figure>
-        
-              </div>
-              <div class="col-xs-3 col-sm-3 col-md-6">
-                  <figure id="main1_figure">
-                      <a href="/Cloudiness.html">
-                      <img   src="/Resources/assets/images/City Latitude Vs. Cloudiness.png" alt="CloudinessVSLat" style="width:150px;height:150px;">
-                      </a>
-                    </figure>
-              </div>
-
-                <div class="col-xs-3 col-sm-3 col-md-6">
-                    <figure id="main1_figure">
-                        <a href="/Humidity.html">
-                        <img   src="/Resources/assets/images/City vs. Humidity.png" alt="HumidityVSLat" style="width:150px;height:150px;">
-                        </a>  
-                    </figure>
-                </div>
-                <div class="col-xs-3 col-sm-3 col-md-6">
-                    <figure id="main1_figure">
-                        <a href="/WindSpeed.html">
-                        <img  src="/Resources/assets/images/City Lat. Vs. Windspeed.png" alt="WindSpeedVSLat" style="width:150px;height:150px;">
-                        </a>  
-                    </figure>
-                </div>
-              </div>
-              </main>
-       
-       
-            
-      </div>
     </div>
+  </div> 
 
-        
-        
-        <br><br>
+  <!-- jQuery CDN, Bootstrap CDN -->
+  <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
 
-
- 
-
-<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
-
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
 </body>
 
 </html>

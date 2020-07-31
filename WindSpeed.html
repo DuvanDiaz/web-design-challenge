@@ -1,104 +1,88 @@
-  
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en-us">
 
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Bootstrap Visualization Dashboard</title>
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-        
-        <link rel="stylesheet" href="Style.css">
-    </head>
-    <body>
-         
-         
-        <nav class="navbar navbar-default">
-           <div class="container-fluid">
-               <div class="navbar-header">
-                   <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-                       <span class="sr-only">Toggle navigation</span>
-                       <span class="icon-bar"></span>
-                       <span class="icon-bar"></span>
-                       <span class="icon-bar"></span>
-                   </button>
-                   <a class="navbar-brand" href="index.html">Latitude</a>
-               </div>
-             
-               <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-       
-                    <ul class="nav navbar-nav navbar-right">
-                      
-                        <li class="dropdown">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Plots <span class="caret"></span></a>
-                        <ul class="dropdown-menu">
-                            <li><a href="MaxTemp.html">Max Temperature</a></li>
-                            <li><a href="Humidity.html">Humidity</a></li>
-                            <li><a href="Cloudiness.html">Cloudiness</a></li>
-                            <li><a href="WindSpeed.html">Wind Speed</a></li>
-                                    
-                        </ul>
-                                
-                        
-                           
-                       <li><a href="Comparison.html">Comparison</a></li>
-                       <li><a href="WeatherData.html">Data</a></li>
-                    </ul>
-               </div>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA_Compatible" content="ie=edge">
+  <title>WindSpeed</title>
 
-           </div>
-       </nav>
-       <div class="container">
-            <div class="row">
-                <div class="col-md-8">
-                    <section class="chart_page">
-                    
-                        <h1 class="page-h1">Wind Speed</h1>
-                        <hr class="hr-page"/>
-                        <img class="img-responsive" src="Resources/assets/images/City Lat. Vs. WindSpeed.png" alt = "City_Latitude_vs_Wind_Speed"/>
-                        <p>There seems to be that correlation between latitude and Wind Speed is minimal to none. 
-                        The wind speed for the majority of cities is less than 15 mph. </p>
-                           
-                   
-                    </section>
-                </div>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" media="screen">
+  <link rel="stylesheet" href="Style.css" media="screen">
 
-                <div class="col-md-4">
-                    <section class="add-summary">
-                        <h2 id="vis-h2">WebVisualizations</h2>
-                        <hr class="hr-page"/>
-                        <div class="div_vis_img">
-                            <a  href="MaxTemp.html"><img class="vis_img" src="Resources/assets/images/Fig1.png" alt="City_Latitude_vs_Max_Temperature"/></a>
-                            <a  href="Humidity.html"><img class="vis_img" src="Resources/assets/images/City Latitude Vs. Humidity.png" alt="City_Latitude_vs_Humidity"/></a>
-                            <a href="Cloudiness.html"><img class="vis_img" src="Resources/assets/images/City Latitude Vs. Cloudiness.png" alt="City_Latitude_vs_Cloudiness"></a>
-                            <a href="WindSpeed.html"><img class="vis_img" src="Resources/assets/images/City Lat. Vs. WindSpeed.png" alt="City_Latitude_vs_Wind_Speed"></a>
-                        </div>
-                    
-                    </section>
+</head>
+<body>
+  <nav class="navbar navbar-default">
+    <div class="container-fluid navbar-custom">
 
-                </div>
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" aria-expanded="true">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <div class="col-xs-9 phone-nav">
+            <a class="navbar-brand" href="index.html" id="index-btn">Latitude</a>
+          </div>
+        </div>
+
+        <!-- Collect the navigation links, forms and other content for toggling -->
+        <div class="collapse navbar-collapse">
+          <ul class="nav navbar-nav navbar-right"> 
+            </li> 
+            <li class="dropdown">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Plots <span class="caret"></span></a>
+            <ul class="dropdown-menu">
+              <li><a href="MaxTemp.html">Max Temperature</a></li>
+              <li role="separator" class="divider"></li>
+              <li><a href="Humidity.html">Humidity</a></li>
+              <li role="separator" class="divider"></li>
+              <li><a href="Cloudiness.html">Cloudiness</a></li>
+              <li role="separator" class="divider"></li>
+              <li><a href="WindSpeed.html">Wind Speed</a></li>
+            </ul>
+            <li><a href="Comparison.html">Comparison</a></li>
+            <li><a href="WeatherData.html">Data</a></li>  
+            <li><a href="">    </a></li> 
+          </ul>
+        </div>    
+    </div> 
+  </nav>
+
+  <div class="container">
+    <section class="row">
+      <div class="col-sm-8">
+        <article class="description-content">
+          <h1 class="description-header text-center">Wind Speed</h1>
+          <hr class="description-hr"/>
+          <img src="Resources/assets/images/City Lat. Vs. WindSpeed.png" alt="" class="img-responsive"/>
+          <p>There is no strong association between latitude and wind speed. There are, however, a few cities in the Northern Hemisphere that seem to experience high windspeeds (25 mph to 35 mph).</p>
+        </article> 
+      </div> 
+
+      <div class="col-sm-4">
+
+        <section id="imageNav-area">
+          <div class="imageNav-content">
+            <div class="imageNav-header text-center">Visualizations</div>
+            <hr />
+            <div id="images">
+                <a href="MaxTemp.html"><img src="Resources/assets/images/Fig1.png" class="imageNav-photo"></a>
+                <a href="Humidity.html"><img src="Resources/assets/images/City Latitude Vs. Humidity.png" class="imageNav-photo"></a>
+                <a href="Cloudiness.html"><img src="Resources/assets/images/City Latitude Vs. Cloudiness.png" class="imageNav-photo"></a>
+                <a href="WindSpeed.html"><img src="Resources/assets/images/City Lat. Vs. WindSpeed.png" class="imageNav-photo active"></a> 
             </div>
-        </div>      
+          </div>  
+        </section>  
+      </div> 
 
+    </section> 
+  </div>
 
+  <!-- jQuery CDN, Bootstrap CDN -->
+  <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
 
-
-         <div class="footer navbar-fixed-bottom">
-        
-             <div class="footer-top"></div>
-
-             <div class="container">
-                
-                <p class="footer-text"></p>
-             </div>
-         </div>
-
-
-
-
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-
-        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-
-    </body>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+</body>
 </html>

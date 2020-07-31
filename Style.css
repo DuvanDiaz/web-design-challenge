@@ -5,8 +5,8 @@ html{
   
   body{
     margin-bottom: 100px;
-    font-family: Arial, Helvetica, sans-serif;
-    background: #f1f1f142; 
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: #dda084e1; 
   }
   /* Media query for body */
   @media only screen and (max-width: 767px) {
@@ -55,7 +55,7 @@ html{
       background-color: #fff;
     }
   
-    #landing-btn {
+    #index-btn {
       /* box model */
       height: 50px;
       padding-top: 15px;
@@ -73,7 +73,7 @@ html{
     }
   
   /* Logo hover state */
-  #landing-btn:hover {
+  #index-btn:hover {
       /* Visual */
       opacity: 0.7;
   }
@@ -173,7 +173,7 @@ html{
     background-color: rgba(255, 255, 255, 0.438);
   }
   
-  .comparison-header {
+  .Comparison-header {
     margin-bottom: 15px;
     font-family: Georgia, Times, "Times New Roman", serif;
     font-size: 24px;
